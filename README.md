@@ -17,7 +17,7 @@
  No
 
  ## Usage
- When the user is logged in and views the homepage, a list of categories of recipies will be displayed. If a user is not logged in then they will be directed to create an account. When the user clics on a category then they are presented with a list of recipies. When they click on a recipe then they are presented with a recipe and form to leave feedback on the recipe. 
+ When the user is logged in and views the homepage, a list of categories of recipies will be displayed. If a user is not logged in then they will be directed to create an account. When the user clicks on a category then they are presented with a list of recipies. When they click on a recipe then they are presented with a recipe and form to leave feedback on the recipe. 
  
  ## Contributors
  Marc Rhymaun, Matt Hurst, Rachel Scime, Ricardo Guerra
