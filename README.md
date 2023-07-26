@@ -29,7 +29,7 @@
  No
 
 ## Questions
-If you have any questions, please contact me at [email](mailto:marcrhymaun@knights.ucf.edu, matthewhurst92@gmail.com, rachelscime@gmail.com, rj.guerra@outlook.com) or visit my github at [github](https://github.com/Titan-MP).
+If you have any questions, please contact me at [email](mailto:marcrhymaun@knights.ucf.edu) or visit my github at [github](https://github.com/Titan-MP).
  
  
  
