@@ -30,11 +30,11 @@ const recipeData = [
         category_id: 4,
     },
     {
-        recipe_name: '',
-        description: '',
-        instructions: '',
-        source: '',
-        category_id: ,
+        recipe_name: 'Kimchi and Sweet Corn Fritters',
+        description: 'Vegan combination of kimchi and corn fritters ready in 40 minutes!',
+        instructions: '1. Chop the kimchi and add it to a large bowl along with the corn kernals, gochujang, green onions, flour, cornstarch, kimchi juice, and sesame oil. Mix until there is no visible flour or cornstarch \n2. heat a large skillet over medium high heat and prep the skillet with oil ',
+        source: 'The Foodie Takes Flight',
+        category_id: 4,
     },
     {
         recipe_name: '',
