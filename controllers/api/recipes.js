@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Recipe , IngredientsAll } = require('/models');
+const { Recipe , IngredientsAll } = require('../../models');
 
 //Get all recipes *//
 router.get('/', async (req, res) => {
@@ -60,3 +60,5 @@ router.get(':id', async (req, res) => {
     }
   }
 });
+
+module.exports = router;

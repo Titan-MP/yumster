@@ -3,7 +3,7 @@ const express = require('express');                             /* Import expres
 const routes = require('./controllers');                        /* Import routes from controllers folder                */
 const exphbs = require("express-handlebars");                   /* Import express-handlebars package                    */
 const path = require("path");                                   /* Import path package                                  */
-
+const session = require('express-session');
 
                                                                 /* ============== SERVER INITIALIZATION =============== */
 const app = express();                                          /* Create express object                                */
@@ -16,6 +16,17 @@ app.use(express.urlencoded({ extended: true }));                /* Parse incomin
 app.use(express.static(path.join(__dirname, 'public')));        /* Serve static files from the public folder            */
 app.use(routes);                                                /* Use routes from controllers folder                   */
 
+const sess = {                                                  /* Session for express middle parts                     */
+  secret: 'Super secret secret',
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
+};
+
+app.use(session(sess));
 
                                                                 /* ============ HANDLEBARS INITIALIZATION ============= */
 const hbs = exphbs.create({});                                  /* Create handlebars object                             */
