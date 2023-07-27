@@ -37,11 +37,11 @@ const recipeData = [
         category_id: 4,
     },
     {
-        recipe_name: '',
-        description: '',
-        instructions: '',
-        source: '',
-        category_id: ,
+        recipe_name: 'Fluffy Cinnamon Pancakes',
+        description: 'Perfect Sunday morning vegan breakfast ready in 30 minutes',
+        instructions: '1. In a medium bowl mix together water and maple syrup \n2. In a large bowl mix together the dry ingredients \n3. While stirring pour the wet mixture into the dry mixture until fully combined (mixture will be thick) \n4. Heat a non-stick skillet over medium heat \n5. Scoop the batter and spread onto the skillet cook for 2-3 minutes on each side till golden brown\n5. Repeat with the remaining batter\nMakes 4 pancakes',
+        source: 'The Foodie Takes Flight',
+        category_id: 1,
     },
     {
         recipe_name: '',
