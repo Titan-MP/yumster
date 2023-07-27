@@ -23,11 +23,11 @@ const recipeData = [
         category_id: 3,
     },
     {
-        recipe_name: '',
-        description: '',
-        instructions: '',
-        source: '',
-        category_id: ,
+        recipe_name: 'Chocolate Peanut Butter Ice Cream Stuffed Dates',
+        description: 'A healthier Snickers alternative!',
+        instructions: '1. Stuff the dates with 1-2 tbsp of ice cream and place on a parchment lined baking sheet and freeze for 30 minutes. \n2. Once frozen spread peanut butter over the ice cream and top with peanuts. Place back in the freezer and freeze for 1 hour or overnight. \n3. Melt the chocolate and cocnut oil together in the microwave. Dip each frozen date into the chocolate and place on the baking sheet and freeze for 2 hours',
+        source: 'Half-Baked Harvest',
+        category_id: 4,
     },
     {
         recipe_name: '',

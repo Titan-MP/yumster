@@ -271,6 +271,52 @@ const ingredientsAllData = [
     unit_id: 4,
     ingredient_id: 37,
   },
+
+  //Recipe 4
+  {
+    recipe_id: 4,
+    quantity_id: 49,
+    unit_id: 6,
+    ingredient_id: 38,
+  },
+  {
+    recipe_id: 4,
+    quantity_id: 12,
+    unit_id: 1,
+    ingredient_id: 39,
+  },
+  {
+    recipe_id: 4,
+    quantity_id: 5,
+    unit_id: 1,
+    ingredient_id: 40,
+  },
+  {
+    recipe_id: 4,
+    quantity_id: 2,
+    unit_id: 1,
+    ingredient_id: 41,
+  },
+  {
+    recipe_id: 4,
+    quantity_id: 9,
+    unit_id: 7,
+    ingredient_id: 42,
+  },
+  {
+    recipe_id: 4,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 43,
+  },
+
+  //recipe 5
+  {
+    recipe_id: 5,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
 ];
 
 const seedIngredientsAll = () => IngredientsAll.bulkCreate(ingredientsAllData);

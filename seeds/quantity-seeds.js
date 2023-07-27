@@ -145,6 +145,9 @@ const quantityData = [
   {
     amount: '8',
   },
+  {
+    amount: '22',
+  },
 ];
 
 const seedQuantity = () => Quantity.bulkCreate(quantityData);

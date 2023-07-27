@@ -120,6 +120,38 @@ const ingredientData = [
     ingredient_name: 'mozzarella cheese',
   },
   {
+    ingredient_name: 'medjool dates, split and pitted',
+  },
+  {
+    ingredient_name: 'vanilla ice cream',
+  },
+  {
+    ingredient_name: 'creamy peanut butter',
+  },
+
+  //41-50
+  {
+    ingredient_name: 'roasted peanuts, chopped',
+  },
+  {
+    ingredient_name: 'semi-sweet chocolate chips',
+  },
+  {
+    ingredient_name: 'coconut oil',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
     ingredient_name: '',
   },
   {
@@ -129,7 +161,7 @@ const ingredientData = [
     ingredient_name: '',
   },
 
-  //41-50
+
 ];
 
 const seedIngredients = () => Ingredients.bulkCreate(ingredientData);
