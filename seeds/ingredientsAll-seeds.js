@@ -313,9 +313,63 @@ const ingredientsAllData = [
   //recipe 5
   {
     recipe_id: 5,
-    quantity_id: ,
-    unit_id: ,
-    ingredient_id: ,
+    quantity_id: 6,
+    unit_id: 1,
+    ingredient_id: 44,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 6,
+    unit_id: 1,
+    ingredient_id: 21,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 3,
+    unit_id: 3,
+    ingredient_id: 45,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 6,
+    unit_id: 6,
+    ingredient_id: 27,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 2,
+    unit_id: 1,
+    ingredient_id: 6,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 12,
+    unit_id: 3,
+    ingredient_id: 46,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 1,
+    unit_id: 1,
+    ingredient_id: 47,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 6,
+    unit_id: 2,
+    ingredient_id: 48,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 6,
+    unit_id: 8,
+    ingredient_id: 7,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 6,
+    unit_id: 8,
+    ingredient_id: 9,
   },
 ];
 

@@ -140,19 +140,19 @@ const ingredientData = [
     ingredient_name: 'coconut oil',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'vegan kimchi',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'gochujang',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'cornstarch',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'kimchi juice',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'sesame oil',
   },
   {
     ingredient_name: '',
