@@ -1,7 +1,9 @@
 const router = require('express').Router();
-const recipesRoute = require('./recipes')
 
-router.use('/recipes', recipesRoute);
+                                                                /* App currently only runs if this is commented out     */
+                                                                // TODO: Finish recipes route implementation
+// const recipesRoute = require('./recipes')
+// router.use('/recipes', recipesRoute);
 
 router.use((req, res) => {
     res.status(404).end();

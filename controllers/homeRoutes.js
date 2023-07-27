@@ -1,12 +1,12 @@
                                                                 /* ===================== IMPORTS ====================== */
 const router = require("express").Router();                     /* Import express.Router()                              */
-const apiRoutes = require("./api");                             /* Import apiRoutes from api/index.js                   */
-const homeRoutes = require("./homeRoutes.js");                  /* Import homeRoutes from homeRoutes.js                 */
+const path = require("path");                                   /* Import path package                                  */
 
 
                                                                 /* ====================== ROUTES ====================== */
-router.use("/api", apiRoutes);                                  /* Use apiRoutes from api/index.js                      */
-router.use("/", homeRoutes);                                    /* Use homeRoutes from homeRoutes.js                    */
+router.get("/", async (req, res) => {
+    res.render("home", { layout: "main" });                     /* Render home.handlebars with main.handlebars layout   */
+});
 
 
                                                                 /* ===================== EXPORTS ====================== */
