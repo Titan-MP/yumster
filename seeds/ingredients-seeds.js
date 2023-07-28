@@ -120,16 +120,142 @@ const ingredientData = [
     ingredient_name: 'mozzarella cheese',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'medjool dates, split and pitted',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'vanilla ice cream',
+  },
+  {
+    ingredient_name: 'creamy peanut butter',
+  },
+
+  //41-50
+  {
+    ingredient_name: 'roasted peanuts, chopped',
+  },
+  {
+    ingredient_name: 'semi-sweet chocolate chips',
+  },
+  {
+    ingredient_name: 'coconut oil',
+  },
+  {
+    ingredient_name: 'vegan kimchi',
+  },
+  {
+    ingredient_name: 'gochujang',
+  },
+  {
+    ingredient_name: 'cornstarch',
+  },
+  {
+    ingredient_name: 'kimchi juice',
+  },
+  {
+    ingredient_name: 'sesame oil',
+  },
+  {
+    ingredient_name: 'baking powder',
+  },
+  {
+    ingredient_name: 'maple syrup',
+  },
+
+  //51-60
+  {
+    ingredient_name: 'water, room temperature',
+  },
+  {
+    ingredient_name: 'leftover rice',
+  },
+  {
+    ingredient_name: 'scallions, chopped',
+  },
+  {
+    ingredient_name: 'soy sauce',
+  },
+  {
+    ingredient_name: 'curry powder',
+  },
+  {
+    ingredient_name: 'sesame seeds',
+  },
+  {
+    ingredient_name: 'mixed vegetables',
+  },
+  {
+    ingredient_name: 'vegetable broth',
+  },
+  {
+    ingredient_name: 'arborio rice',
+  },
+  {
+    ingredient_name: 'white onion, chopped',
+  },
+
+  //61-70
+  {
+    ingredient_name: 'tomatoes, chopped',
+  },
+  {
+    ingredient_name: 'sundried tomatoes',
+  },
+  {
+    ingredient_name: 'basil, chopped',
+  },
+  {
+    ingredient_name: 'tomato paste',
+  },
+  {
+    ingredient_name: 'cherry tomatoes, halved',
+  },
+  {
+    ingredient_name: 'store bought pizza crust',
+  },
+  {
+    ingredient_name: 'basil pesto',
+  },
+  {
+    ingredient_name: 'mozzarella pearls',
+  },
+  {
+    ingredient_name: 'balsamic glaze',
   },
   {
     ingredient_name: '',
   },
 
-  //41-50
+  //71-80
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
 ];
 
 const seedIngredients = () => Ingredients.bulkCreate(ingredientData);
