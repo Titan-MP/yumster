@@ -166,36 +166,96 @@ const ingredientData = [
     ingredient_name: 'water, room temperature',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'leftover rice',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'scallions, chopped',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'soy sauce',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'curry powder',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'sesame seeds',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'mixed vegetables',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'vegetable broth',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'arborio rice',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'white onion, chopped',
   },
 
   //61-70
+  {
+    ingredient_name: 'tomatoes, chopped',
+  },
+  {
+    ingredient_name: 'sundried tomatoes',
+  },
+  {
+    ingredient_name: 'basil, chopped',
+  },
+  {
+    ingredient_name: 'tomato paste',
+  },
+  {
+    ingredient_name: 'cherry tomatoes, halved',
+  },
+  {
+    ingredient_name: 'store bought pizza crust',
+  },
+  {
+    ingredient_name: 'basil pesto',
+  },
+  {
+    ingredient_name: 'mozzarella pearls',
+  },
+  {
+    ingredient_name: 'balsamic glaze',
+  },
+  {
+    ingredient_name: '',
+  },
 
-
+  //71-80
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
+  {
+    ingredient_name: '',
+  },
 ];
 
 const seedIngredients = () => Ingredients.bulkCreate(ingredientData);

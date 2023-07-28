@@ -44,25 +44,25 @@ const recipeData = [
         category_id: 1,
     },
     {
-        recipe_name: '',
-        description: '',
-        instructions: '',
-        source: '',
-        category_id: ,
+        recipe_name: 'Easy Curry Fried Rice',
+        description: 'Quick and easy curry fried rice, ready in 15 minutes!',
+        instructions: '1. In a large pan heat the sesame oil over high heat \n2. an in onions and garlic and saute till fragrant (about 2 minutes) \n3. Add in vegetables and cook till tender \n4. Add in the rice and season with salt, soy sauce, and curry powder \nServes 2',
+        source: 'The Foodie Takes Flight',
+        category_id: 2,
     },
     {
-        recipe_name: '',
-        description: '',
-        instructions: '',
-        source: '',
-        category_id: ,
+        recipe_name: 'Vegan Tomato and Basil Risotto',
+        description: 'Creamy comfort food that takes 45 minutes to make!',
+        instructions: '1. In a large pot over medium high heat, heat the olive oil\n2. Add in the onion and garlic and saute till fragrant (about 2 minutes)\n3. Add in chopped tomatoes and saute for 2 minutes then mix in the arborio rice\n4. Add in the white wine and mix until it is absorbed by the rice\n5. Add in 1 C of the vegetable broth and follow with the tomato paste, basil, and sun dried tomatoes. Mix on medium heat until the rice absorbs the liquid\n6. Add another 1/2 cup of stock and mix until absorbed(5 minutes). Repeat this step with the remaining broth\n7. Within 30 minutes the rice should be perfectly cookedand still chewy, season with salt and serve!\nMakes 3 servings',
+        source: 'The Foodie Takes Flight',
+        category_id: 3,
     },
     {
-        recipe_name: '',
-        description: '',
-        instructions: '',
-        source: '',
-        category_id: ,
+        recipe_name: 'Easy Bruschetta Pizza',
+        description: 'Refreshing pizza to satisfy the whole family in under 30 minutes!',
+        instructions: '1. Preheat the oven to 425 F\n2. In a small bowl make the bruschetta by combining the tomatoes, basil, garlic, olive oil, salt, and pepper. Toss to combine\n3. Spread pesto over the pizza crust and scatter with mozzarella pearls\n4. Put the pizza in the oven and bake for 15-18 minutes until the crust is golden brown\n5. Once cooked take the pizza out of the oven, top with the bruschetta, slice and serve!\nServes 4',
+        source: 'Get on My Plate',
+        category_id: 4,
     },
     {
         recipe_name: '',
@@ -86,4 +86,7 @@ const recipeData = [
         category_id: ,
     },
 
-]
+];
+const seedRecipe = () => Recipe.bulkCreate(recipeData);
+
+module.exports = seedRecipe;
