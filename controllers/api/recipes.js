@@ -48,6 +48,14 @@ router.get(':id', async (req, res) => {
             'unit_id',
             'quantity_id',
             'ingredient_id'
+            ],
+          model: Comment,
+          attributes: [
+            'id',
+            'comment_text',
+            'post_id',
+            'user_id',
+            'created_at',
           ],
           },
         ],
@@ -60,5 +68,25 @@ router.get(':id', async (req, res) => {
     }
   }
 });
+
+
+
+
+/////////////////////////MAY OR MAY NOT USE///////////////////////////////////////
+router.post('/', async (req, res) => {
+  try { 
+    const recipeData = await Recipe.create({
+    recipe_name: req.body.recipe_name,
+    description: req.body.description,
+    instructions: req.body.instructions,
+    source: req.body.source,
+  });
+  // if the recipe is successfully created, the new response will be returned as json
+  res.status(200).json(recipeData)
+} catch (err) {
+  res.status(400).json(err);
+}
+});
+
 
 module.exports = router;
