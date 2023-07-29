@@ -4,7 +4,8 @@ const routes = require('./controllers');                        /* Import routes
 const exphbs = require("express-handlebars");                   /* Import express-handlebars package                    */
 const path = require("path");                                   /* Import path package                                  */
 const session = require('express-session');
-
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const sequelize = require('./config/connection');
                                                                 /* ============== SERVER INITIALIZATION =============== */
 const app = express();                                          /* Create express object                                */
 const PORT = process.env.PORT || 3001;                          /* Set port to 3001 if no port is specified             */
@@ -23,6 +24,7 @@ const sess = {                                                  /* Session for e
   saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize,
+
   }),
 };
 
@@ -36,5 +38,5 @@ app.set("view engine", "handlebars");                           /* Set handlebar
 
                                                                 /* =================== APP LISTENER =================== */
 app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}!`);
+  console.log(`App listening on http://localhost:${PORT}`);
 });

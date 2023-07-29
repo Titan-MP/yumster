@@ -1,7 +1,7 @@
                                                                 /* ===================== IMPORTS ====================== */
 const router = require("express").Router();                     /* Import express.Router()                              */
 const path = require("path");                                   /* Import path package                                  */
-const withAuth = require("../utils/auth");
+//const withAuth = require("../utils/auth");
 
                                                                 /* ====================== ROUTES ====================== */
 router.get("/", async (req, res) => {                           /* Render home.handlebars with main.handlebars layout   */
