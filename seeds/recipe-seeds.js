@@ -64,27 +64,27 @@ const recipeData = [
         source: 'Get on My Plate',
         category_id: 4,
     },
-    {
-        recipe_name: '',
-        description: '',
-        instructions: '',
-        source: '',
-        category_id: ,
-    },
-    {
-        recipe_name: '',
-        description: '',
-        instructions: '',
-        source: '',
-        category_id: ,
-    },
-    {
-        recipe_name: '',
-        description: '',
-        instructions: '',
-        source: '',
-        category_id: ,
-    },
+    // {
+    //     recipe_name: '',
+    //     description: '',
+    //     instructions: '',
+    //     source: '',
+    //     category_id: ,
+    // },
+    // {
+    //     recipe_name: '',
+    //     description: '',
+    //     instructions: '',
+    //     source: '',
+    //     category_id: ,
+    // },
+    // {
+    //     recipe_name: '',
+    //     description: '',
+    //     instructions: '',
+    //     source: '',
+    //     category_id: ,
+    // },
 
 ];
 const seedRecipe = () => Recipe.bulkCreate(recipeData);

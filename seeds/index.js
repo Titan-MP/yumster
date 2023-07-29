@@ -30,8 +30,8 @@ const seedAll = async () => {
   await seedIngredientsAll();
   console.log('\n----- INGREDIENTS ALL SEEDED -----\n');
 
-  await seedComment();
-  console.log('\n----- COMMENTS ALL SEEDED -----\n');
+  // await seedComment();
+  // console.log('\n----- COMMENTS ALL SEEDED -----\n');
 
   process.exit(0);
 };

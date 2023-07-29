@@ -9,17 +9,21 @@ const User = require('./user');
 
 
 // One to many relationship btwn category and recipies
-Recipe.belongsTo(Category);
+Recipe.belongsTo(Category,{
+    foreignKey: 'category_id'
+});
 
-Category.hasMany(Recipe);
+Category.hasMany(Recipe, {
+    foreignKey: 'category_id'
+});
 
 //many to many relationships through IngredientsAll model
-Recipe.hasMany(IngredientsAll);
+// Recipe.hasMany(IngredientsAll);
 
 Ingredients.belongsToMany(Recipe, {
     through: {
         model: IngredientsAll,
-        unique: false,
+        foreignKey: 'ingredient_id'
     },
     as: 'ingredients',
 });
@@ -27,7 +31,7 @@ Ingredients.belongsToMany(Recipe, {
 Unit.belongsToMany(Recipe, {
     through: {
         model: IngredientsAll,
-        unique: false,
+        foreignKey: 'unit_id'
     },
     as: 'units',
 });
@@ -35,7 +39,7 @@ Unit.belongsToMany(Recipe, {
 Quantity.belongsToMany(Recipe, {
     through: {
         model: IngredientsAll,
-        unique: false,
+        foreignKey: 'quantity_id'
     },
     as: 'quantities',
 });
