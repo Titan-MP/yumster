@@ -6,12 +6,20 @@ const Quantity = require('./quantity');
 const Recipe = require('./recipe');
 const Unit = require('./unit');
 const User = require('./user');
-
+const Comment = require('./comment');
 
 // One to many relationship btwn category and recipies
 Recipe.belongsTo(Category);
 
 Category.hasMany(Recipe);
+
+Comment.belongsTo(Recipe,{
+    foreignKey: 'recipe_id'
+});
+Recipe.hasMany(Comment,{
+    foreignKey: 'recipe_id'
+});
+
 
 //many to many relationships through IngredientsAll model
 Recipe.hasMany(IngredientsAll);
