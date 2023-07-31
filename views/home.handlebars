@@ -1,4 +1,45 @@
-<main></main>
+<link rel="stylesheet" href="/css/homePage.css">
 
-
-<script src="/js/main.js"></script>
+<main>
+    {{!-- <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Caramel Cream Cheese Cinnamon Rolls</h1>
+            <p>Quick, one pot comfort food that can be made in 25 minutes!</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+        </div>
+    </div> --}}
+    <div class="jumbotron">
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h1 class="card-title display-3">Caramel Cream Cheese Cinnamon Rolls</h1>
+                            <p class="card-text">Light and fluffy cinnamon rolls perfect for any occasion! These
+                                cinnamon rolls are taken to the next level with a brown butter and caramel cream cheese
+                                frosting. This recipe takes about 2.5 hours from start to finish and will make 12
+                                cinnamon rolls.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <a href="#" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="\assets\caramel-cream-cheese-cinnamon-rolls\Fluffy-Christmas-Cinnamon-Rolls-with-Caramel-Cream-Cheese-Icing-1.jpg"
+                            class="img-fluid rounded-end" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="display-4">Recipes</h1>
+        <h2 class="display-6">Breakfast</h2>
+        {{> recipeCards recipes=recipes}}
+        <h2 class="display-6">Lunch</h2>
+        {{> recipeCards recipes=recipes}}
+        <h2 class="display-6">Dinner</h2>
+        {{> recipeCards recipes=recipes}}
+        <h2 class="display-6">Snacks</h2>
+        {{> recipeCards recipes=recipes}}
+    </div>
+</main>
