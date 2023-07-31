@@ -1,0 +1,21 @@
+{{#if recipes}}
+    {{#each recipes}}
+        <div class="recipe">
+            <h2>{{title}}</h2>
+            <p>{{recipe_content}}</p>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{recipe_name}}</h5>
+                <p class="card-text">{{description}}</p>
+                <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    {{/each}}
+{{else}}
+    <div class="alert alert-info">
+        <h3>No recipes found</h3>
+        <p>There are no recipes to display. Please check back later.</p>
+    </div>
+{{/if}}
