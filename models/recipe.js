@@ -27,7 +27,7 @@ Recipe.init(
       allowNull: false,
     },
     category_id: {
-      type: DataTypes.INT,
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: 'category',
