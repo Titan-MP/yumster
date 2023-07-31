@@ -16,6 +16,7 @@ Category.hasMany(Recipe);
 //many to many relationships through IngredientsAll model
 Recipe.hasMany(IngredientsAll);
 
+
 Ingredients.belongsToMany(Recipe, {
     through: {
         model: IngredientsAll,
