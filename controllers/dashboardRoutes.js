@@ -7,7 +7,7 @@ const path = require("path");                                   /* Import path p
                                                                 /* ====================== ROUTES ====================== */
 router.get("/", async (req, res) => {                           /* Render home.handlebars with main.handlebars layout   */
     try {
-        res.render("home", { layout: "main" })
+        res.render("dashboard", { layout: "main" })
     } 
     catch (err) {
         res.status(500).json(err);

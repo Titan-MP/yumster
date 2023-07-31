@@ -3,7 +3,13 @@ const express = require('express');                             /* Import expres
 const routes = require('./controllers');                        /* Import routes from controllers folder                */
 const exphbs = require("express-handlebars");                   /* Import express-handlebars package                    */
 const path = require("path");                                   /* Import path package                                  */
-const session = require('express-session');
+const session = require('express-session');                     /* Import express-session package                       */
+
+                                                                /* Import sequelize package and create connection       */
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
+const sequelize = require('./config/connection');               /* Import sequelize connection                          */
+
 
                                                                 /* ============== SERVER INITIALIZATION =============== */
 const app = express();                                          /* Create express object                                */
