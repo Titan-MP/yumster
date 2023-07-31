@@ -271,6 +271,393 @@ const ingredientsAllData = [
     unit_id: 4,
     ingredient_id: 37,
   },
+
+  //Recipe 4
+  {
+    recipe_id: 4,
+    quantity_id: 49,
+    unit_id: 6,
+    ingredient_id: 38,
+  },
+  {
+    recipe_id: 4,
+    quantity_id: 12,
+    unit_id: 1,
+    ingredient_id: 39,
+  },
+  {
+    recipe_id: 4,
+    quantity_id: 5,
+    unit_id: 1,
+    ingredient_id: 40,
+  },
+  {
+    recipe_id: 4,
+    quantity_id: 2,
+    unit_id: 1,
+    ingredient_id: 41,
+  },
+  {
+    recipe_id: 4,
+    quantity_id: 9,
+    unit_id: 7,
+    ingredient_id: 42,
+  },
+  {
+    recipe_id: 4,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 43,
+  },
+
+  //recipe 5
+  {
+    recipe_id: 5,
+    quantity_id: 6,
+    unit_id: 1,
+    ingredient_id: 44,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 6,
+    unit_id: 1,
+    ingredient_id: 21,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 3,
+    unit_id: 3,
+    ingredient_id: 45,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 6,
+    unit_id: 6,
+    ingredient_id: 27,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 2,
+    unit_id: 1,
+    ingredient_id: 6,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 12,
+    unit_id: 3,
+    ingredient_id: 46,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 1,
+    unit_id: 1,
+    ingredient_id: 47,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 6,
+    unit_id: 2,
+    ingredient_id: 48,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 6,
+    unit_id: 8,
+    ingredient_id: 7,
+  },
+  {
+    recipe_id: 5,
+    quantity_id: 6,
+    unit_id: 8,
+    ingredient_id: 9,
+  },
+
+
+  //Recipe 6
+  {
+    recipe_id: 6,
+    quantity_id: 6,
+    unit_id: 1,
+    ingredient_id: 6,
+  },
+  {
+    recipe_id: 6,
+    quantity_id: 12,
+    unit_id: 2,
+    ingredient_id: 10,
+  },
+  {
+    recipe_id: 6,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 49,
+  },
+  {
+    recipe_id: 6,
+    quantity_id: 5,
+    unit_id: 2,
+    ingredient_id: 7,
+  },
+  {
+    recipe_id: 6,
+    quantity_id: 18,
+    unit_id: 3,
+    ingredient_id: 50,
+  },
+  {
+    recipe_id: 6,
+    quantity_id: 5,
+    unit_id: 1,
+    ingredient_id: 51,
+  },
+
+  //Recipe 7
+  {
+    recipe_id: 7,
+    quantity_id: 12,
+    unit_id: 1,
+    ingredient_id: 52,
+  },
+  {
+    recipe_id: 7,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 48,
+  },
+  {
+    recipe_id: 7,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 53,
+  },
+  {
+    recipe_id: 7,
+    quantity_id: 12,
+    unit_id: 6,
+    ingredient_id: 18,
+  },
+  {
+    recipe_id: 7,
+    quantity_id: 5,
+    unit_id: 2,
+    ingredient_id: 7,
+  },
+  {
+    recipe_id: 7,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 54,
+  },
+  {
+    recipe_id: 7,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 55,
+  },
+  {
+    recipe_id: 7,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 56,
+  },
+  {
+    recipe_id: 7,
+    quantity_id: 12,
+    unit_id: 1,
+    ingredient_id: 57,
+  },
+
+  //recipe 8
+  {
+    recipe_id: 8,
+    quantity_id: 21,
+    unit_id: 1,
+    ingredient_id: 58,
+  },
+  {
+    recipe_id: 8,
+    quantity_id: 5,
+    unit_id: 1,
+    ingredient_id: 59,
+  },
+  {
+    recipe_id: 8,
+    quantity_id: 1,
+    unit_id: 1,
+    ingredient_id: 60,
+  },
+  {
+    recipe_id: 8,
+    quantity_id: 12,
+    unit_id: 6,
+    ingredient_id: 18,
+  },
+  {
+    recipe_id: 8,
+    quantity_id: 1,
+    unit_id: 1,
+    ingredient_id: 34,
+  },
+  {
+    recipe_id: 8,
+    quantity_id: 6,
+    unit_id: 1,
+    ingredient_id: 61,
+  },
+  {
+    recipe_id: 8,
+    quantity_id: 3,
+    unit_id: 1,
+    ingredient_id: 62,
+  },
+  {
+    recipe_id: 8,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 63,
+  },
+  {
+    recipe_id: 8,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 64,
+  },
+  {
+    recipe_id: 8,
+    quantity_id: 6,
+    unit_id: 2,
+    ingredient_id: 7,
+  },
+
+  //Recipe 9
+  {
+    recipe_id: 9,
+    quantity_id: 50,
+    unit_id: 4,
+    ingredient_id: 65,
+  },
+  {
+    recipe_id: 9,
+    quantity_id: 1,
+    unit_id: 1,
+    ingredient_id: 63,
+  },
+  {
+    recipe_id: 9,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 30,
+  },
+  {
+    recipe_id: 9,
+    quantity_id: 12,
+    unit_id: 6,
+    ingredient_id: 18,
+  },
+  {
+    recipe_id: 9,
+    quantity_id: 1,
+    unit_id: 2,
+    ingredient_id: 23,
+  },
+  {
+    recipe_id: 9,
+    quantity_id: 6,
+    unit_id: 6,
+    ingredient_id: 66,
+  },
+  {
+    recipe_id: 9,
+    quantity_id: 24,
+    unit_id: 3,
+    ingredient_id: 67,
+  },
+  {
+    recipe_id: 9,
+    quantity_id: 48,
+    unit_id: 4,
+    ingredient_id: 68,
+  },
+  {
+    recipe_id: 9,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 69,
+  },
+
+  //Recipe 10
+  {
+    recipe_id: 10,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: ,
+    unit_id: ,
+    ingredient_id: ,
+  },
 ];
 
 const seedIngredientsAll = () => IngredientsAll.bulkCreate(ingredientsAllData);
