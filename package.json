@@ -4,9 +4,9 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "nodemon",
         "start": "node server.js",
-        "seed": "node seeds/seed.js"
+        "seed": "node seeds"
     },
     "author": "",
     "license": "ISC",
@@ -22,5 +22,8 @@
         "mysql2": "^2.2.5",
         "sequelize": "^6.3.5",
         "sessions": "^0.0.2-7"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
     }
 }
