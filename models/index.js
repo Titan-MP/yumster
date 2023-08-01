@@ -61,5 +61,5 @@ module.exports = {
     Recipe,
     Unit,
     User,
-   // Comment,
+   Comment,
 };
