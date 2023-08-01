@@ -64,27 +64,13 @@ const recipeData = [
         source: 'Get on My Plate',
         category_id: 4,
     },
-    // {
-    //     recipe_name: '',
-    //     description: '',
-    //     instructions: '',
-    //     source: '',
-    //     category_id: ,
-    // },
-    // {
-    //     recipe_name: '',
-    //     description: '',
-    //     instructions: '',
-    //     source: '',
-    //     category_id: ,
-    // },
-    // {
-    //     recipe_name: '',
-    //     description: '',
-    //     instructions: '',
-    //     source: '',
-    //     category_id: ,
-    // },
+    {
+        recipe_name: 'Potato Soup with Bacon',
+        description: 'Classic potato soup whipped up in 30 minutes',
+        instructions: '1. In a stockpot over low heat cook the bacon pieces till crispy (7-10 minutes). Once cooked remove bacon and set aside. \n2. In the same pot with about 1 tbsp of bacon grease add onions and flour and cook while stirring over medium heat for 3-4 minutes. \n3. Add in the chicken stock, milk, and potatoes. Cook till potatoes are tender (10-12 minutes). \n4. Stir in heavy cream and Velveeta and cook till cheese is completely melted (taste and season with more salt if needed).\n5. Top with bacon and serve. \nMakes 8 servings',
+        source: 'Get on My Plate',
+        category_id: 2,
+    },
 
 ];
 const seedRecipe = () => Recipe.bulkCreate(recipeData);

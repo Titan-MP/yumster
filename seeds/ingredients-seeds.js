@@ -222,39 +222,24 @@ const ingredientData = [
     ingredient_name: 'balsamic glaze',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'bacon, chopped',
   },
 
-  //71-80
+  //71-75
   {
-    ingredient_name: '',
+    ingredient_name: 'potatoes, peeled and diced',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'chicken stock',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'heavy cream',
   },
   {
-    ingredient_name: '',
+    ingredient_name: 'Velveeta cheese',
   },
   {
-    ingredient_name: '',
-  },
-  {
-    ingredient_name: '',
-  },
-  {
-    ingredient_name: '',
-  },
-  {
-    ingredient_name: '',
-  },
-  {
-    ingredient_name: '',
-  },
-  {
-    ingredient_name: '',
+    ingredient_name: 'pepper',
   },
 ];
 

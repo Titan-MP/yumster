@@ -585,79 +585,67 @@ const ingredientsAllData = [
   //   ingredient_id: 69,
   // },
 
-  // //Recipe 10
-  // {
-  //   recipe_id: 10,
-  //   quantity_id: ,
-  //   unit_id: ,
-  //   ingredient_id: ,
-  // },
-  // {
-  //   recipe_id: 10,
-  //   quantity_id: ,
-  //   unit_id: ,
-  //   ingredient_id: ,
-  // },
-  // {
-  //   recipe_id: 10,
-  //   quantity_id: ,
-  //   unit_id: ,
-  //   ingredient_id: ,
-  // },
-  // {
-  //   recipe_id: 10,
-  //   quantity_id: ,
-  //   unit_id: ,
-  //   ingredient_id: ,
-  // },
-  // {
-  //   recipe_id: 10,
-  //   quantity_id: ,
-  //   unit_id: ,
-  //   ingredient_id: ,
-  // },
-  // {
-  //   recipe_id: 10,
-  //   quantity_id: ,
-  //   unit_id: ,
-  //   ingredient_id: ,
-  // },
-  // {
-  //   recipe_id: 10,
-  //   quantity_id: ,
-  //   unit_id: ,
-  //   ingredient_id: ,
-  // },
-  // {
-  //   recipe_id: 10,
-  //   quantity_id: ,
-  //   unit_id: ,
-  //   ingredient_id: ,
-  // },
-  // {
-  //   recipe_id: 10,
-  //   quantity_id: ,
-  //   unit_id: ,
-  //   ingredient_id: ,
-  // },
-  // {
-  //   recipe_id: 10,
-  //   quantity_id: ,
-  //   unit_id: ,
-  //   ingredient_id: ,
-  // },
-  // {
-  //   recipe_id: 10,
-  //   quantity_id: ,
-  //   unit_id: ,
-  //   ingredient_id: ,
-  // },
-  // {
-  //   recipe_id: 10,
-  //   quantity_id: ,
-  //   unit_id: ,
-  //   ingredient_id: ,
-  // },
+  //Recipe 10
+  {
+    recipe_id: 10,
+    quantity_id: 6,
+    unit_id: 7,
+    ingredient_id: 70,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: 18,
+    unit_id: 7,
+    ingredient_id: 71,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: 6,
+    unit_id: 3,
+    ingredient_id: 6,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: 12,
+    unit_id: 1,
+    ingredient_id: 60,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: 24,
+    unit_id: 1,
+    ingredient_id: 72,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: 3,
+    unit_id: 2,
+    ingredient_id: 7,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: 12,
+    unit_id: 1,
+    ingredient_id: 1,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: 2,
+    unit_id: 1,
+    ingredient_id: 73,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: 6,
+    unit_id: 7,
+    ingredient_id: 74,
+  },
+  {
+    recipe_id: 10,
+    quantity_id: 6,
+    unit_id: 8,
+    ingredient_id: 75,
+  },
 ];
 
 const seedIngredientsAll = () => IngredientsAll.bulkCreate(ingredientsAllData);
