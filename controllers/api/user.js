@@ -1,13 +1,12 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-import isStrongPassword from 'validator';
+const { body, validationResult } = require('express-validator');
 
 // CREATE new user
-router.post('/', async (req, res) => {
-  if (isStrongPassword(req.body.password[
-    { minLength: 8, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 1 }
-  ])) {
+router.post('/', body('password').isStrongPassword(), async (req, res) => {
+  const result = validationResult(req);
+  if (result.isEmpty()) {
     try {
       const dbUserData = await User.create({
         username: req.body.username,
@@ -24,7 +23,7 @@ router.post('/', async (req, res) => {
       res.status(500).json(err);
     }
   } else {
-    res.json('Password has to be at least 8 characters and include 1 lowercase letter, 1 uppercase letter, 1 number, and 1 special symbol')
+  res.json('Password has to be at least 8 characters and include 1 lowercase letter, 1 uppercase letter, 1 number, and 1 special symbol')
   }
 });
 
