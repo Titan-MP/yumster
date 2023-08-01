@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Recipe, /*Comment*/ } = require('../../models');
+const { Recipe, Comment } = require('../../models');
 
 
 /* Get all comments */
@@ -74,3 +74,5 @@ router.post('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+module.exports = router;
