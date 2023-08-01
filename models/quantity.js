@@ -9,7 +9,6 @@ Quantity.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
     },
     amount: {
       type: DataTypes.STRING,

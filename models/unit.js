@@ -9,7 +9,6 @@ Unit.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
     },
     unit_name: {
       type: DataTypes.STRING,

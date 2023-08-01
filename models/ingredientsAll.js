@@ -13,19 +13,19 @@ IngredientsAll.init(
         key: 'id',
       },
     },
-    unit_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: 'unit',
-        key: 'id',
-      },
-    },
     quantity_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: 'quantity',
+        key: 'id',
+      },
+    },
+    unit_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'unit',
         key: 'id',
       },
     },
