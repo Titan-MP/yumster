@@ -14,7 +14,7 @@ Comment.init(
     comment_text: {
       type: DataTypes.TEXT,
       allowNull: false,
-      unique: true,
+      unique: false,
     },
     recipe_id: {
       type: DataTypes.INTEGER,
