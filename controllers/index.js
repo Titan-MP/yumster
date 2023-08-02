@@ -5,6 +5,7 @@ const homeRoutes = require("./homeRoutes.js");                  /* Import homeRo
 const dashboardRoutes = require("./dashboardRoutes.js")         /* Import dashboardRoutes from dashboardRoutes.js       */
 const loginRoutes = require("./loginRoutes.js")                 /* Import loginRoutes from loginRoutes.js               */
 const signupRoutes = require("./signupRoutes.js")               /* Import signupRoutes from signupRoutes.js             */
+const recipeRoutes = require("./recipeRoutes.js")               /* Import recipeRoutes from recipeRoutes.js             */
 
 
                                                                 /* ====================== ROUTES ====================== */
@@ -13,6 +14,7 @@ router.use("/", homeRoutes);                                    /* Use homeRoute
 router.use("/dashboard", dashboardRoutes);                      /* Use dashboardRoutes from dashboardRoutes.js          */
 router.use("/login", loginRoutes);                              /* Use loginRoutes from loginRoutes.js                  */
 router.use("/signup", signupRoutes);                            /* Use signupRoutes from signupRoutes.js                */
+router.use("/recipe", recipeRoutes);                            /* Use recipeRoutes from recipeRoutes.js                */
 
 
                                                                 /* ===================== EXPORTS ====================== */
