@@ -32,7 +32,8 @@ Recipe.hasMany(IngredientsAll);
 Ingredients.belongsToMany(Recipe, {
     through: {
         model: IngredientsAll,
-        foreignKey: 'ingredient_id'
+        unique: false,
+        // foreignKey: 'ingredient_id'
     },
     as: 'ingredients',
 });
@@ -40,7 +41,8 @@ Ingredients.belongsToMany(Recipe, {
 Unit.belongsToMany(Recipe, {
     through: {
         model: IngredientsAll,
-        foreignKey: 'unit_id'
+        unique: false,
+        // foreignKey: 'unit_id'
     },
     as: 'units',
 });
@@ -48,7 +50,8 @@ Unit.belongsToMany(Recipe, {
 Quantity.belongsToMany(Recipe, {
     through: {
         model: IngredientsAll,
-        foreignKey: 'quantity_id'
+        unique: false,
+        // foreignKey: 'quantity_id'
     },
     as: 'quantities',
 });
