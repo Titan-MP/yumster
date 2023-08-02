@@ -1,6 +1,4 @@
 const router = require('express').Router();
-
-                                                                /* App currently only runs if this is commented out     */
 const recipesRoute = require('./recipes')
 const userRoute = require('./user')
 const commentRoute = require('./comment')
