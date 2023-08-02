@@ -754,3 +754,5 @@ const ingredientsAllData = [
 const seedIngredientsAll = () => IngredientsAll.bulkCreate(ingredientsAllData);
 
 module.exports = seedIngredientsAll;
+
+//meaningless change...
