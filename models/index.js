@@ -1,10 +1,10 @@
 // Import Models
+const Recipe = require('./recipe');
 const Category = require('./category');
 const Ingredients = require('./ingredients');
-const IngredientsAll = require('./ingredientsAll');
 const Quantity = require('./quantity');
-const Recipe = require('./recipe');
 const Unit = require('./unit');
+const IngredientsAll = require('./ingredientsAll');
 const User = require('./user');
 const Comment = require('./comment');
 
@@ -26,7 +26,7 @@ Recipe.hasMany(Comment,{
 
 
 //many to many relationships through IngredientsAll model
-// Recipe.hasMany(IngredientsAll);
+Recipe.hasMany(IngredientsAll);
 
 
 Ingredients.belongsToMany(Recipe, {
@@ -54,12 +54,12 @@ Quantity.belongsToMany(Recipe, {
 });
 
 module.exports = {
+    Recipe,
     Category,
     Ingredients,
-    IngredientsAll,
     Quantity,
-    Recipe,
     Unit,
+    IngredientsAll,
     User,
-   // Comment,
+    Comment,
 };
