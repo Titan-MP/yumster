@@ -1,3 +1,16 @@
 .jumbotron {
     padding-top: 3.5rem;
 }
+
+.homepage-main-banner-image {
+    background-image: url('/assets/recipe-images/Fluffy-Christmas-Cinnamon-Rolls-with-Caramel-Cream-Cheese-Icing-1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.homepage-main-banner-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
