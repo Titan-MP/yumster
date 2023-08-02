@@ -4,7 +4,7 @@ const seedQuantity = require('./quantity-seeds');
 const seedUnit = require('./unit-seeds');
 const seedIngredients = require('./ingredients-seeds');
 const seedIngredientsAll = require('./ingredientsAll-seeds');
-const seedComment = require('./comment-seeds');
+// const seedComment = require('./comment-seeds');
 
 const sequelize = require('../config/connection');
 
