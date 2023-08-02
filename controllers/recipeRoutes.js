@@ -4,9 +4,9 @@ const router = require("express").Router();                     /* Import expres
 
 
                                                                 /* ====================== ROUTES ====================== */
-router.get("/", async (req, res) => {                           /* Render home.handlebars with main.handlebars layout   */
+router.get("/", async (req, res) => {                           /* Render recipe.handlebars with main.handlebars layout */
     try {
-        res.render("home", { layout: "main" })
+        res.render("recipe", { layout: "main" })
     } 
     catch (err) {
         res.status(500).json(err);
