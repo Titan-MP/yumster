@@ -33,6 +33,10 @@ Recipe.init(
         key: 'id',
       },
     },
+    recipe_image: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    }
   },
   {
     sequelize,

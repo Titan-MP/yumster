@@ -8,7 +8,7 @@ const recipeData = [
         instructions: '1. Heat a large pot over meadium-high heat and cook the bacon until crisp.\n2. Remove the bacon and drain off most of the bacon grease. \n3. To the same pot add the butter and onion, cook till fragrant (about 5 minutes).\n4. Mix in the G=garlic, orzo, corn, and thyme. Cook till orzo becomes golden and toasted (about 2 minutes). \n5. Add the broth to the pot and bring to a boil. Once boiling reduce to a simmer for  8-10 minutes, or until orzo is al dente. Stir often. \n6. Stir in the milk, green chilies, cheddar, parmesan, and green onions and cook till warmed throughout. \n Servers 4',
         source: 'Half-Baked Harvest',
         category_id: 2,
-        filename: 'One-Pot-Cheesy-Creamed-Corn-Orzo.jpg',
+        recipe_image: 'One-Pot-Cheesy-Creamed-Corn-Orzo.jpg',
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const recipeData = [
         instructions: '1. using a stand mixer with a dough hook attachment combine the milk, yeast, and brown sugar. Let the mixture sit for 5 - 10 minutes until the mixture becomes bubbly. \n2. Add in the butter, eggs, vanilla, salt, and 3.5 - 4 cups of flour and mix till fully incoprperated (if the dough is still sticky add in more flour till the dough is smooth to the touch.\n3. Cover the bowl with plastic wrap and let it sit till the dough doubles in size (about 1 hour).\n4. While the dough rises prep the filling by combining the brown sugar, sugar, and cinnamon\n5. When the dough is done rising roll it out onto a floured surface unitl you get a 12 x 18 inch rectangle\n6. Spread the butter out onto the dough and sprinkle on the cinnamon sugar mixture.\n7. Starting with the longer end roll the dough into a log keeping it as tigh as possible as you roll. Cut the log into 12 equal sections and place into a greased 9x13 inch baking dish.\n8. Cover the cinnamon rolls in plastic wrap and allow to rise for another 15-20 minutes. Meanwhile preheat the over to 350 F. \n9. Bake the rolls for 25-30 minutes until golden brown.\n10. While the cinnamon rolls cook make the icing. Add the butter to a pot and heat over mediume heat unitl butter is slightly brown and has a nutty smell (about 3 minutes), then remove from heat.\n11. In a seperat bowl beat the cream cheese until fluffy, once fluffy add the brown butter and beat to combine. Then add the powdered sugar, caramel, vanilla, and a pinch of salt.\n12. When the cinnamon rolls come out of the oven top with icing and serve!\nMakes 12 Cinnamon Rolls',
         source: 'Half-Baked Harvest',
         category_id: 1,
-        filename: 'Fluffy-Christmas-Cinnamon-Rolls-with-Caramel-Cream-Cheese-Icing-1.jpg',
+        recipe_image: 'Fluffy-Christmas-Cinnamon-Rolls-with-Caramel-Cream-Cheese-Icing-1.jpg',
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ const recipeData = [
         instructions: '1. Preheat oven to 400° F\n2. In a medium bowl stir the chicken with 2 tbsp olive oil, 2 tbsp Italian seasoning, Dijon mustard, honey, and a pinch of salt and pepper\n3. Heat 1 tbsp of olive oil in a large skillet over medium-high heat. Add the chicken. Sear on both sides until golden, 3-5 minutes. Remove everything from the skillet and set aside.\n4. To the skillet, add 2 tbsp butter, the orzo, shallots, garlic, and 2 tbsp thyme. Mix in the zucchini slices. Cook until the orzo is toasted (about 2 minutes)\n5.  Add the wine and 2 cups water. Season with salt and pepper. Bring to a boil over high heat. Slide the chicken and any juices left on the plate back into the skillet. Arrange the cheese around the chicken. Bake, uncovered for 15 minutes or until the chicken is cooked through.\n6. While the skillet is in the oven begin making the garlic butter: Lightly brown 4 tbsp butter in a small skillet. Add 1 tbsp of Italian seasoning and 1 tbsp of thyme. Season with salt, pepper, and chili flakes.\n7. Once the chicken comes out of the oven top with the garlic butter and serve!',
         source: 'Half-Baked Harvest',
         category_id: 3,
-        filename: 'Skillet-Garlic-Butter-Chicken-and-Zucchini-Orzo.jpg',
+        recipe_image: 'Skillet-Garlic-Butter-Chicken-and-Zucchini-Orzo.jpg',
     },
     {
         id: 4,
@@ -35,7 +35,7 @@ const recipeData = [
         instructions: '1. Stuff the dates with 1-2 tbsp of ice cream and place on a parchment lined baking sheet and freeze for 30 minutes. \n2. Once frozen spread peanut butter over the ice cream and top with peanuts. Place back in the freezer and freeze for 1 hour or overnight. \n3. Melt the chocolate and cocnut oil together in the microwave. Dip each frozen date into the chocolate and place on the baking sheet and freeze for 2 hours',
         source: 'Half-Baked Harvest',
         category_id: 4,
-        filename: 'Chocolate-Peanut-Butter-Ice-Cream-Stuffed-Dates.jpg',
+        recipe_image: 'Chocolate-Peanut-Butter-Ice-Cream-Stuffed-Dates.jpg',
     },
     {
         id: 5,
@@ -44,7 +44,7 @@ const recipeData = [
         instructions: '1. Chop the kimchi and add it to a large bowl along with the corn kernals, gochujang, green onions, flour, cornstarch, kimchi juice, and sesame oil. Mix until there is no visible flour or cornstarch \n2. Heat a large skillet over medium high heat and prep the skillet with oil \n3. Add batter to the heated pan and spread the batter out into a thin layer. Fit as many fritters in the pan as possible and cook for 2-3 minutes on each side until golden brown and crisp. \n4. Serve hot with vegan mayo or sour cream \nMakes 24 Fritters',
         source: 'The Foodie Takes Flight',
         category_id: 4,
-        filename: 'Kimchi-Corn-Fritters.jpg',
+        recipe_image: 'Kimchi-Corn-Fritters.jpg',
     },
     {
         id: 6,
@@ -53,7 +53,7 @@ const recipeData = [
         instructions: '1. In a medium bowl mix together water and maple syrup \n2. In a large bowl mix together the dry ingredients \n3. While stirring pour the wet mixture into the dry mixture until fully combined (mixture will be thick) \n4. Heat a non-stick skillet over medium heat \n5. Scoop the batter and spread onto the skillet cook for 2-3 minutes on each side till golden brown\n5. Repeat with the remaining batter\nMakes 4 pancakes',
         source: 'The Foodie Takes Flight',
         category_id: 1,
-        filename: 'Fluffy-Cinnamon-Pancakes.jpg',
+        recipe_image: 'Fluffy-Cinnamon-Pancakes.jpg',
     },
     {
         id: 7,
@@ -62,7 +62,7 @@ const recipeData = [
         instructions: '1. In a large pan heat the sesame oil over high heat \n2. an in onions and garlic and saute till fragrant (about 2 minutes) \n3. Add in vegetables and cook till tender \n4. Add in the rice and season with salt, soy sauce, and curry powder \nServes 2',
         source: 'The Foodie Takes Flight',
         category_id: 2,
-        filename: 'Easy Curry Fried Rice.jpg',
+        recipe_image: 'Easy Curry Fried Rice.jpg',
     },
     {
         id: 8,
@@ -71,7 +71,7 @@ const recipeData = [
         instructions: '1. In a large pot over medium high heat, heat the olive oil\n2. Add in the onion and garlic and saute till fragrant (about 2 minutes)\n3. Add in chopped tomatoes and saute for 2 minutes then mix in the arborio rice\n4. Add in the white wine and mix until it is absorbed by the rice\n5. Add in 1 C of the vegetable broth and follow with the tomato paste, basil, and sun dried tomatoes. Mix on medium heat until the rice absorbs the liquid\n6. Add another 1/2 cup of stock and mix until absorbed(5 minutes). Repeat this step with the remaining broth\n7. Within 30 minutes the rice should be perfectly cookedand still chewy, season with salt and serve!\nMakes 3 servings',
         source: 'The Foodie Takes Flight',
         category_id: 3,
-        filename: 'Vegan-Tomato-and-Basil Risotto.jpg',
+        recipe_image: 'Vegan-Tomato-and-Basil Risotto.jpg',
     },
     {
         id: 9,
@@ -80,7 +80,7 @@ const recipeData = [
         instructions: '1. Preheat the oven to 425 F\n2. In a small bowl make the bruschetta by combining the tomatoes, basil, garlic, olive oil, salt, and pepper. Toss to combine\n3. Spread pesto over the pizza crust and scatter with mozzarella pearls\n4. Put the pizza in the oven and bake for 15-18 minutes until the crust is golden brown\n5. Once cooked take the pizza out of the oven, top with the bruschetta, slice and serve!\nServes 4',
         source: 'Get on My Plate',
         category_id: 4,
-        filename: 'Easy-Bruschetta-Pizza.jpg',
+        recipe_image: 'Easy-Bruschetta-Pizza.jpg',
     },
     {
         id: 10,
@@ -89,7 +89,7 @@ const recipeData = [
         instructions: '1. In a stockpot over low heat cook the bacon pieces till crispy (7-10 minutes). Once cooked remove bacon and set aside. \n2. In the same pot with about 1 tbsp of bacon grease add onions and flour and cook while stirring over medium heat for 3-4 minutes. \n3. Add in the chicken stock, milk, and potatoes. Cook till potatoes are tender (10-12 minutes). \n4. Stir in heavy cream and Velveeta and cook till cheese is completely melted (taste and season with more salt if needed).\n5. Top with bacon and serve. \nMakes 8 servings',
         source: 'Get on My Plate',
         category_id: 2,
-        filename: 'Potato-Soup-with-Bacon.jpg',
+        recipe_image: 'Potato-Soup-with-Bacon.jpg',
     },
 
 ];
