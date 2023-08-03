@@ -3,18 +3,16 @@
 <div class="container mt-4">
     <div class="row">            
         <div class="col-md-6">
-            <h1 class="display-3">{{recipe_name}}</h1>
+            <h1 class="display-3">{{recipe.recipe_name}}</h1>
             {{!-- <h1 class="display-3">Caramel Cream Cheese Cinnamon Rolls</h1> --}}
-            <p class="lead my-3">{{description}}</p>
+            <p class="lead my-3">{{recipe.description}}</p>
             {{!-- <p class="lead my-3">Light and fluffy cinnamon rolls perfect for any occasion! These
                 cinnamon rolls are taken to the next level with a brown butter and caramel cream cheese
                 frosting. This recipe takes about 2.5 hours from start to finish and will make 12
                 cinnamon rolls.
             </p> --}}
-            <h2 class="display-5">Ingredients</h2>
-            <p class="lead my-3">{{ingredients}}</p>
             <h2 class="display-5">Instructions</h2>
-            <p class="lead my-3">{{instructions}}</p>
+            <p class="lead my-3">{{recipe.instructions}}</p>
             {{!-- <p class="lead recipe-instructions">1. using a stand mixer with a dough hook attachment combine the milk, yeast, and
                 brown sugar. Let the mixture sit for 5 - 10 minutes until the mixture becomes bubbly. \n2. Add in the
                 butter, eggs, vanilla, salt, and 3.5 - 4 cups of flour and mix till fully incoprperated (if the dough is still
@@ -33,7 +31,7 @@
             </p> --}}
         </div>
         <div class="col-md-6">
-            <img src="\assets\recipe-images\\{{recipe_image}}" alt="Image" class="img-fluid rounded shadow">
+            <img src="\assets\recipe-images\\{{recipe.recipe_image}}" alt="Image" class="img-fluid rounded shadow">
             {{!-- <img src="\assets\recipe-images\Fluffy-Christmas-Cinnamon-Rolls-with-Caramel-Cream-Cheese-Icing-1.jpg" alt="Image" class="img-fluid rounded shadow"> --}}
         </div>
     </div>

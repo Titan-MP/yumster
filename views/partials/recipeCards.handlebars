@@ -8,7 +8,8 @@
                 <div class="card-body">
                     <h5 class="card-title">{{recipe_name}}</h5>
                     <p class="card-text">{{description}}</p>
-                    <a href="/recipe/{{id}}" class="btn btn-primary">View Recipe</a>
+                    <a id="recipeBtn"  href="/recipe/{{id}}" class="btn btn-primary">View Recipe</a>
+                    {{!-- <button id="recipeBtn" datarecipeid="{{id}}" class="w-100 btn btn-lg btn-primary">View Recipe</button> --}}
                     {{!-- <a href="/recipe" class="btn btn-primary">View Recipe</a> --}}
                 </div>
             </div>
@@ -23,3 +24,5 @@
     <p>There are no recipes to display. Please check back later.</p>
 </div>
 {{/if}}
+
+<script src="./js/recipe.js"></script>
