@@ -1,6 +1,6 @@
                                                                 /* ===================== IMPORTS ====================== */
 const router = require("express").Router();                     /* Import express.Router()                              */
-const { Recipe , IngredientsAll } = require('../../models');
+const { Recipe , IngredientsAll } = require('../models');
 // const withAuth = require("../utils/auth");                   // TODO: Uncomment when withAuth is needed
 
 
@@ -21,14 +21,13 @@ router.get("/", async (req, res) => {                           /* Render home.h
     });
 
     const recipes = recipeData.map((recipe) =>
-      recipe.get({ plain: true })
+      Recipe.get({ plain: true })
     );
 
-    res.json(recipes);
+    // res.json(recipes);
 
-    res.render('homepage', {
+    res.render('home', {
       recipes,
-      loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     console.log(err);
