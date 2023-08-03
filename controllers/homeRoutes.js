@@ -21,7 +21,7 @@ router.get("/", async (req, res) => {                           /* Render home.h
     });
 
     const recipes = recipeData.map((recipe) =>
-      Recipe.get({ plain: true })
+      recipe.get({ plain: true })
     );
 
     // res.json(recipes);
