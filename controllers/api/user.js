@@ -9,7 +9,6 @@ router.post('/', body('password').isStrongPassword(), async (req, res) => {
   const result = validationResult(req);
   if (result.isEmpty()) {
     try {
-      console.log('We are here!!!!');
       const dbUserData = await User.create({
         username: req.body.username,
         password: req.body.password,
@@ -21,12 +20,10 @@ router.post('/', body('password').isStrongPassword(), async (req, res) => {
         res.status(200).json(dbUserData);
       });
     } catch (err) {
-      console.log('failed to create user');
       console.log(err);
       res.status(500).json(err);
     }
   } else {
-    console.log('still not working!!!');
   res.json('Password has to be at least 8 characters and include 1 lowercase letter, 1 uppercase letter, 1 number, and 1 special symbol')
   }
 });

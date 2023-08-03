@@ -13,5 +13,7 @@ signUpBtn.onclick = event => {
         },
         body: JSON.stringify({ username, password })
     })
-        .then(response => response.json()).then(console.log);
-}
+        .then(response => response.json()).then(info => {
+            alert(info);
+        });
+};
