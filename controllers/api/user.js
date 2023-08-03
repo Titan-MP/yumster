@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { log } = require('handlebars');
 const { User } = require('../../models');
 
 const { body, validationResult } = require('express-validator');
