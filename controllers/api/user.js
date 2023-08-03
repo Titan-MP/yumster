@@ -9,6 +9,7 @@ router.post('/', body('password').isStrongPassword(), async (req, res) => {
   const result = validationResult(req);
   if (result.isEmpty()) {
     try {
+      console.log(req.body);
       const dbUserData = await User.create({
         username: req.body.username,
         password: req.body.password,
@@ -21,7 +22,7 @@ router.post('/', body('password').isStrongPassword(), async (req, res) => {
       }
 
       req.session.loggedIn = true;
-      return res.status(200).json(dbUserData);
+      return res.status(200).json('User created');
     });
     } catch (err) {
       console.log(err);
@@ -35,9 +36,11 @@ router.post('/', body('password').isStrongPassword(), async (req, res) => {
 // User Login
 router.post('/login', async (req, res) => {
   try {
+    console.log(req.body.username, req.body.password);
     const dbUserData = await User.findOne({
       where: {
         username: req.body.username,
+        password: req.body.password
       },
     });
 
@@ -48,21 +51,19 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    const validPassword = await dbUserData.checkPassword(req.body.password);
+    // const validPassword = await dbUserData.checkPassword(req.body.password);
 
-    if (!validPassword) {
-      res
-        .status(400)
-        .json({ message: 'Incorrect username or password. Please try again!' });
-      return;
-    }
+    // if (!validPassword) {
+    //   res
+    //     .status(400)
+    //     .json({ message: 'Incorrect username or password. Please try again!' });
+    //   return;
+    // }
 
     req.session.save(() => {
       req.session.loggedIn = true;
 
-      res
-        .status(200)
-        .json({ user: dbUserData, message: 'You are now logged in!' });
+      return res.status(200).json({ message: 'Loggedin' });
     });
   } catch (err) {
     console.log(err);
