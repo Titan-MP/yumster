@@ -6,5 +6,12 @@ signUpBtn.onclick = event => {
     let username = document.getElementById('username-signup').value;
     let password = document.getElementById('password-signup').value;
 
-    console.log(username, password);
+    fetch('/api/user', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username, password })
+    })
+        .then(response => response.json()).then(console.log);
 }
