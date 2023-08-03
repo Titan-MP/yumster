@@ -2,7 +2,8 @@ document
     .getElementById('recipeBtn')
     .addEventListener('click', event => {
         event.preventDefault();
-        const recipeId = event.target.dataset.id
+        const recipeId = event.target.dataset.datarecipeid
+        console.log(recipeId)
 
         fetch('/recipe/' + recipeId, {
             method: 'GET',

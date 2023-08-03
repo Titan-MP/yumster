@@ -1,6 +1,7 @@
                                                                 /* ===================== IMPORTS ====================== */
 const router = require("express").Router();                     /* Import express.Router()                              */
-const { Recipe , IngredientsAll } = require('../models');
+const { Recipe, IngredientsAll, Comment } = require('../models');
+const session = require('express-session');
 // const withAuth = require("../utils/auth");                   // TODO: Uncomment when withAuth is needed
 
 
@@ -14,11 +15,11 @@ router.get("/", async (req, res) => {                           /* Render recipe
     }
 });
 
-router.get(':id', async (req, res) => {
+router.get('/:id', async (req, res) => {
   // If the user is not logged in, redirect the user to the login page
-  if (!req.session.loggedIn) {
-    res.redirect('/login');
-  } else {
+  // if (!req.session.loggedIn) {
+  //   res.redirect('/login');
+  // } else {
     // If the user is logged in, allow them to view the recipes section
     try {
       const recipeData = await Recipe.findByPk(req.params.id, {
@@ -34,26 +35,24 @@ router.get(':id', async (req, res) => {
           attributes: [
             'id',
             'comment_text',
-            'post_id',
-            'user_id',
-            'created_at',
+            'recipe_id'
           ],
           },
         ],
       });
-      const aRecipe = recipeData.get({ plain: true });
-      console.log('Recipe Data:', aRecipe);
+      const recipe = recipeData.get({ plain: true });
+      console.log('Recipe Data:', recipe);
       
         res.render('recipe',
             {
-                aRecipe,
-                loggedIn: req.session.loggedIn
+                recipe,
+                // loggedIn: req.session.loggedIn
             });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
     }
-  }
+  // }
 });
 
 
