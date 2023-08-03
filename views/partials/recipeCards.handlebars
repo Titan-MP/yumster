@@ -8,7 +8,8 @@
                 <div class="card-body">
                     <h5 class="card-title">{{recipe_name}}</h5>
                     <p class="card-text">{{description}}</p>
-                    <a href="/recipe/{{id}}" class="btn btn-primary">View Recipe</a>
+                    {{!-- <a href="/recipe/{{id}}" class="btn btn-primary">View Recipe</a> --}}
+                    <button id="recipeBtn" data-recipe-id="{{id}}" class="w-100 btn btn-lg btn-primary">View Recipe</button>
                     {{!-- <a href="/recipe" class="btn btn-primary">View Recipe</a> --}}
                 </div>
             </div>
