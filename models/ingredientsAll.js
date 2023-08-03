@@ -5,9 +5,16 @@ class IngredientsAll extends Model {}
 
 IngredientsAll.init(
   {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+    },
     recipe_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      unique: false,
       references: {
         model: 'recipe',
         key: 'id',
@@ -16,6 +23,7 @@ IngredientsAll.init(
     quantity_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      unique: false,
       references: {
         model: 'quantity',
         key: 'id',
@@ -24,6 +32,7 @@ IngredientsAll.init(
     unit_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      unique:false,
       references: {
         model: 'unit',
         key: 'id',
