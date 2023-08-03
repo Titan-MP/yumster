@@ -1,3 +1,47 @@
-<h1 class="display-4">Recipe Name</h1>
-<h2 class="display-6">Description</h2>
-<h2 class="display-6">Instructions</h2>
+{{!-- <link rel="stylesheet" href="/css/recipePage.css"> --}}
+
+<div class="container mt-4">
+    <div class="row">            
+        <div class="col-md-6">
+            <h1 class="display-3">{{recipe_name}}</h1>
+            {{!-- <h1 class="display-3">Caramel Cream Cheese Cinnamon Rolls</h1> --}}
+            <p class="lead my-3">{{description}}</p>
+            {{!-- <p class="lead my-3">Light and fluffy cinnamon rolls perfect for any occasion! These
+                cinnamon rolls are taken to the next level with a brown butter and caramel cream cheese
+                frosting. This recipe takes about 2.5 hours from start to finish and will make 12
+                cinnamon rolls.
+            </p> --}}
+            <h2 class="display-5">Ingredients</h2>
+            <p class="lead my-3">{{ingredients}}</p>
+            <h2 class="display-5">Instructions</h2>
+            <p class="lead my-3">{{instructions}}</p>
+            {{!-- <p class="lead recipe-instructions">1. using a stand mixer with a dough hook attachment combine the milk, yeast, and
+                brown sugar. Let the mixture sit for 5 - 10 minutes until the mixture becomes bubbly. \n2. Add in the
+                butter, eggs, vanilla, salt, and 3.5 - 4 cups of flour and mix till fully incoprperated (if the dough is still
+                sticky add in more flour till the dough is smooth to the touch.\n3. Cover the bowl with plastic wrap and let it sit
+                till the dough doubles in size (about 1 hour).\n4. While the dough rises prep the filling by combining the
+                brown sugar, sugar, and cinnamon\n5. When the dough is done rising roll it out onto a floured surface unitl you
+                get a 12 x 18 inch rectangle\n6. Spread the butter out onto the dough and sprinkle on the cinnamon sugar
+                mixture.\n7. Starting with the longer end roll the dough into a log keeping it as tigh as possible as you roll. Cut the
+                log into 12 equal sections and place into a greased 9x13 inch baking dish.\n8. Cover the cinnamon rolls in
+                plastic wrap and allow to rise for another 15-20 minutes. Meanwhile preheat the over to 350 F. \n9. Bake the rolls
+                for 25-30 minutes until golden brown.\n10. While the cinnamon rolls cook make the icing. Add the butter to a pot
+                and heat over mediume heat unitl butter is slightly brown and has a nutty smell (about 3 minutes), then remove
+                from heat.\n11. In a seperat bowl beat the cream cheese until fluffy, once fluffy add the brown butter and beat
+                to combine. Then add the powdered sugar, caramel, vanilla, and a pinch of salt.\n12. When the cinnamon rolls
+                come out of the oven top with icing and serve!\nMakes 12 Cinnamon Rolls
+            </p> --}}
+        </div>
+        <div class="col-md-6">
+            <img src="\assets\recipe-images\\{{recipe_image}}" alt="Image" class="img-fluid rounded shadow">
+            {{!-- <img src="\assets\recipe-images\Fluffy-Christmas-Cinnamon-Rolls-with-Caramel-Cream-Cheese-Icing-1.jpg" alt="Image" class="img-fluid rounded shadow"> --}}
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="display-5">Comments</h2>
+        <div class="alert alert-info">
+            <h3>No comments at this time.</h3>
+            <p>There are no comments to show. Please check back later.</p>
+        </div>
+    </div>
+</div>
