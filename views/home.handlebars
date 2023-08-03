@@ -14,14 +14,30 @@
         </div>
     </div>
     <div class="container">
-        <h1 class="display-4" id="homepage-recipes">Recipes</h1>
-        <h2 class="display-6" id="homepage-breakfast">Breakfast</h2>
-        {{> recipeCards recipes=recipes}}
-        <h2 class="display-6" id="homepage-lunch">Lunch</h2>
-        {{> recipeCards recipes=recipes}}
-        <h2 class="display-6" id="homepage-dinner">Dinner</h2>
-        {{> recipeCards recipes=recipes}}
-        <h2 class="display-6" id="homepage-snacks">Snacks</h2>
-        {{> recipeCards recipes=recipes}}
+
+        <hr>
+        <h1 class="display-4 recipe-headers" id="homepage-recipes">Recipes</h1>
+        <hr>
+        <div class="mb-4"></div>
+        <h2 class="display-6 recipe-headers" id="homepage-breakfast">Breakfast</h2>
+        <hr>
+        {{> recipeCards recipes=breakfastRecipes}}
+        <div class="mb-4"></div>
+        
+        <h2 class="display-6 recipe-headers" id="homepage-lunch">Lunch</h2>
+        <hr>
+        {{> recipeCards recipes=lunchRecipes}}
+        <div class="mb-4"></div>
+        
+        <h2 class="display-6 recipe-headers" id="homepage-dinner">Dinner</h2>
+        <hr>
+        {{> recipeCards recipes=dinnerRecipes}}
+        <div class="mb-4"></div>
+        
+        <h2 class="display-6 recipe-headers" id="homepage-snacks">Snacks</h2>
+        <hr>
+        {{> recipeCards recipes=snackRecipes}}
+        <div class="mb-4"></div>
+        
     </div>
 </main>
