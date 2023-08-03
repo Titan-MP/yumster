@@ -41,9 +41,9 @@ router.get(':id', async (req, res) => {
           },
         ],
       });
-      const aRecipe = recipeData.map((recipe) =>
-      recipe.get({ plain: true })
-    );
+      const aRecipe = recipeData.get({ plain: true });
+      console.log('Recipe Data:', aRecipe);
+      
         res.render('recipe',
             {
                 aRecipe,

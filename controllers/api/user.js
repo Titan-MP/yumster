@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { log } = require('handlebars');
 const { User } = require('../../models');
 
 const { body, validationResult } = require('express-validator');
@@ -13,11 +14,15 @@ router.post('/', body('password').isStrongPassword(), async (req, res) => {
         password: req.body.password,
       });
 
-      req.session.save(() => {
-        req.session.loggedIn = true;
+    req.session.save((err) => {
+      if (err) {
+        console.error('Error saving session:', err);
+        return res.status(500).json({ error: 'Internal Server Error' });
+      }
 
-        res.status(200).json(dbUserData);
-      });
+      req.session.loggedIn = true;
+      return res.status(200).json(dbUserData);
+    });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
