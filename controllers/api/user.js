@@ -8,23 +8,24 @@ const { body, validationResult } = require('express-validator');
 router.post('/', body('password').isStrongPassword(), async (req, res) => {
   const result = validationResult(req);
   if (result.isEmpty()) {
-    try {
-      const dbUserData = await User.create({
-        username: req.body.username,
-        password: req.body.password,
-      });
-
-      req.session.save(() => {
-        req.session.loggedIn = true;
-
-        res.status(200).json(dbUserData);
-      });
-    } catch (err) {
-      console.log(err);
-      res.status(500).json(err);
-    }
+    // try {
+    const dbUserData = await User.create({
+      username: req.body.username,
+      password: req.body.password,
+    })
+    // req.session.save(() => {
+    //   req.session.user_id = newUser.id;
+    //   req.session.username = newUser.username;
+    //   req.session.loggedIn = true;
+    //   res.status(200).json(dbUserData);
+    // })
+    res.json(dbUserData);
+    // .catch(err) {
+    //   console.log(err);
+    //   res.status(500).json(err);
+    // }
   } else {
-  res.json('Password has to be at least 8 characters and include 1 lowercase letter, 1 uppercase letter, 1 number, and 1 special symbol')
+    res.json('Password has to be at least 8 characters and include 1 lowercase letter, 1 uppercase letter, 1 number, and 1 special symbol')
   }
 });
 
@@ -53,13 +54,15 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    req.session.save(() => {
-      req.session.loggedIn = true;
+    // req.session.save(() => {
+    //   req.session.loggedIn = true;
 
-      res
-        .status(200)
-        .json({ user: dbUserData, message: 'You are now logged in!' });
-    });
+    //   res
+    //     .status(200)
+    //     .json({ user: dbUserData, message: 'You are now logged in!' });
+    // });
+    res.json({ user: dbUserData, message: 'You are now logged in!' });
+
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
