@@ -13,5 +13,5 @@ loginBtn.onclick = event => {
         },
         body: JSON.stringify({ username, password })
     })
-        .then(response => response.json()).then(console.log);
+        .then(() => document.location.replace('/'))
 };

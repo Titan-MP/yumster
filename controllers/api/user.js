@@ -8,33 +8,29 @@ const { body, validationResult } = require('express-validator');
 router.post('/', body('password').isStrongPassword(), async (req, res) => {
   const result = validationResult(req);
   if (result.isEmpty()) {
-    try {
-      console.log(req.body);
-      const dbUserData = await User.create({
-        username: req.body.username,
-        password: req.body.password,
-      });
-
-    req.session.save((err) => {
-      if (err) {
-        console.error('Error saving session:', err);
-        return res.status(500).json({ error: 'Internal Server Error' });
-      }
-
+    // try {
+    const dbUserData = await User.create({
+      username: req.body.username,
+      password: req.body.password,
+    })
+    req.session.save(() => {
+      req.session.user_id = dbUserData.id;
+      req.session.username = dbUserData.username;
       req.session.loggedIn = true;
-      return res.status(200).json('User created');
-    });
-    } catch (err) {
-      console.log(err);
-      res.status(500).json(err);
-    }
+      res.status(200).json(dbUserData);
+    })
+    // .catch(err) {
+    //   console.log(err);
+    //   res.status(500).json(err);
+    // }
   } else {
-  res.json('Password has to be at least 8 characters and include 1 lowercase letter, 1 uppercase letter, 1 number, and 1 special symbol')
+    res.json('Password has to be at least 8 characters and include 1 lowercase letter, 1 uppercase letter, 1 number, and 1 special symbol')
   }
 });
 
 // User Login
 router.post('/login', async (req, res) => {
+  
   try {
     console.log(req.body.username, req.body.password);
     const dbUserData = await User.findOne({
@@ -43,28 +39,40 @@ router.post('/login', async (req, res) => {
         password: req.body.password
       },
     });
-
+    
     if (!dbUserData) {
+      console.log('No Data', dbUserData);
+      res
+      .status(400)
+      .json({ message: 'Incorrect username or password. Please try again!' });
+      return;
+    }
+    
+    const validPassword = await dbUserData.checkPassword(req.body.password);
+    
+    if (!validPassword) {
+      console.log('Bad password', dbUserData);
       res
         .status(400)
         .json({ message: 'Incorrect username or password. Please try again!' });
       return;
     }
 
-    // const validPassword = await dbUserData.checkPassword(req.body.password);
-
-    // if (!validPassword) {
-    //   res
-    //     .status(400)
-    //     .json({ message: 'Incorrect username or password. Please try again!' });
-    //   return;
-    // }
+    console.log('Session: ', req.session);
 
     req.session.save(() => {
       req.session.loggedIn = true;
+      req.session.user_id = dbUserData.id;
+      req.session.username = dbUserData.username;
+      req.session.loggedIn = true;
 
-      return res.status(200).json({ message: 'Loggedin' });
+
+      res
+      .status(200)
+      .json({ user: dbUserData, message: 'You are now logged in!' });
     });
+    // res.json({ user: dbUserData, message: 'You are now logged in!' });
+
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
