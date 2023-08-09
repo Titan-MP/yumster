@@ -32,9 +32,11 @@ router.post('/', body('password').isStrongPassword(), async (req, res) => {
 router.post('/login', async (req, res) => {
   
   try {
+    console.log(req.body.username, req.body.password);
     const dbUserData = await User.findOne({
       where: {
         username: req.body.username,
+        password: req.body.password
       },
     });
     

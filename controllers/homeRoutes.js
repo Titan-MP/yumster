@@ -6,6 +6,9 @@ const { Recipe , IngredientsAll } = require('../models');
 
                                                                 /* ====================== ROUTES ====================== */
 router.get("/", async (req, res) => {                           /* Render home.handlebars with main.handlebars layout   */
+
+    const recipesByCategory = {};
+
     try {
     const recipeData = await Recipe.findAll({
       include: [
@@ -20,15 +23,27 @@ router.get("/", async (req, res) => {                           /* Render home.h
       ],
     });
 
-    const recipes = recipeData.map((recipe) =>
-      recipe.get({ plain: true })
-    );
+    const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
 
-    // res.json(recipes);
-
-    res.render('home', {
-      recipes,
+    recipes.forEach((recipe) => {
+      if (!recipesByCategory[recipe.category_id]) {
+        recipesByCategory[recipe.category_id] = [];
+      }
+      recipesByCategory[recipe.category_id].push(recipe);
     });
+
+    const breakfastRecipes = recipesByCategory[1];
+    const lunchRecipes = recipesByCategory[2];
+    const dinnerRecipes = recipesByCategory[3];
+    const snackRecipes = recipesByCategory[4]; 
+    
+    res.render('home', {
+      breakfastRecipes,
+      lunchRecipes,
+      dinnerRecipes,
+      snackRecipes
+    });
+    
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
